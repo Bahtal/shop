@@ -1,0 +1,72 @@
+.main-page-block {
+  background: url("../img/main-bg.jpeg");
+  background-size: cover;
+  height: 100vh;
+  padding-top: 24px;
+}
+.descr {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    font-size: 72px;
+    line-height: 1.1;
+    font-family: 'w-medium', sans-serif;
+    text-align: center;
+    &-green {
+      color: $main-color;
+    }
+    &-white {
+      color: #fff;
+    }
+  }
+  &-item {
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+
+    &__video {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row nowrap;
+
+      &__img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &-tier {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text {
+      font-size: 56px;
+      line-height: 1.1;
+      font-family: 'din-regular', sans-serif;
+      & sub {
+        font-size: 24px;
+        line-height: 1.3;
+        font-family: 'din-medium', sans-serif;
+      }
+      &--green {
+        color: $main-color;
+      }
+      &--whote {
+        color: #ffffff;
+      }
+    }
+  }
+}

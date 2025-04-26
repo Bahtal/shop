@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  padding: 24px;
+  background: $main-color;
+  color: $second-color;
+
+  &-left, &-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    column-gap: 24px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    column-gap: 16px;
+
+    &-item {
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 500;
+    }
+  }
+
+  &-telephone {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  &-video {
+    width: 32px;
+    height: 32px;
+  }
+}

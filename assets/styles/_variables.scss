@@ -1,6 +1,67 @@
-$columnGap {
-  column-gap: 35px;
-  @media (max-width: 1280px) {
-    column-gap: 20px;
-  }
+$column-gap: 35px;
+
+//Fonts
+//////////////////////////////// DIN Pro ////////////////////////////////////
+@font-face {
+  font-family: 'din-light';
+  src: url("../fonts/DIN Pro/din_pro_condensed_light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: 'din-regular';
+  src: url("../fonts/DIN Pro/din_pro_condensed_regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'din-medium';
+  src: url("../fonts/DIN Pro/din_pro_condensed_medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'din-bold';
+  src: url("../fonts/DIN Pro/din_pro_condensed_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+//////////////////////////////// TT Wellington ////////////////////////////////////
+@font-face {
+  font-family: 'w-light';
+  src: url("../fonts/TT Wellington/tt_wellingtons_light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'w-regular';
+  src: url("../fonts/TT Wellington/tt_wellingtons_regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'w-medium';
+  src: url("../fonts/TT Wellington/tt_wellingtons_medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'w-bold';
+  src: url("../fonts/TT Wellington/tt_wellingtons_bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Colors
+$main-color: #EBFF8D;
+$second-color: #40424D;
+

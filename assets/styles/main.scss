@@ -1,0 +1,69 @@
+@import "mixin";
+@import 'variables';
+@import './header/index';
+@import './main-page/index';
+
+
+*,
+*::after,
+*::before
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'din-medium', sans-serif;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0.02em;
+}
+*[cursor-pointer],
+a,
+button {
+  cursor: url("../img/pointer.svg") 10 10, pointer;
+}
+.container {
+  max-width: 1664px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: $second-color;
+}
+
+.button {
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  transition: all .4s ease;
+  border: 2px solid;
+
+  &--lime {
+    background: $main-color;
+    color: $second-color;
+    border-color: $second-color;
+    &:hover {
+      background: $second-color;
+      color: $main-color;
+    }
+  }
+  &--black {
+    background: $second-color;
+    color: $main-color;
+    border-color: $main-color;
+    &:hover {
+      background: $main-color;
+      color: $second-color;
+    }
+  }
+}
